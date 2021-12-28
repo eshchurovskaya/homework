@@ -93,7 +93,7 @@ body{
 }
 
 .startup{
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
 }
 
