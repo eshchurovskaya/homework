@@ -450,7 +450,7 @@ body{
 
     .picture{
         padding: 25px 0 10px;
-        }
+    }
 
     .picture-list{
         display: grid;
@@ -529,7 +529,7 @@ body{
         align-items: center;
     }
 
-    .info-words:not(480px 360px 320px){
+    .info-flex > div:not(:first-of-type){
         display: none;
     }
 
@@ -665,9 +665,6 @@ body{
     .images-list:not(:last-child){
         margin-bottom: 30px;
     }
-
-
-
 }
 
 @media (max-width: 550px){
@@ -675,16 +672,13 @@ body{
         max-width: 430px;
     }
 
-   
-
     .picture-list{
         display: grid;
         grid-template-areas:
-        "one two"
-        "three four"
-        "five six";
-        gap: 30px;
+        "one two three"
+        "four five six";
         text-align: center;
+        gap: 0;
     }
 
     .picture-list > div{
@@ -763,8 +757,6 @@ body{
         column-gap: 35px;
         row-gap: 20px;
     }
-    
-
 }
 
 @media (max-width: 480px){
@@ -796,8 +788,10 @@ body{
     }
 
     .text-inner{
-        max-width: 240px;
+        max-width: 271px;
         text-align: left;
+        font-size: 22px;
+        line-height: 28px;
         margin-bottom: 35px;
     }
 
@@ -806,5 +800,148 @@ body{
     line-height: 42px;
    }
 
+   .words-first{
+       margin-bottom: 21px;
+   }
+
+   .title-first{
+       width: 300px;
+       margin: 0 0 20px 0;
+
+   }
+
+   .words-second{
+    width: 246px;
+    font-size: 22px;
+    line-height: 30px;
+    margin:0 auto;
+   }
+
+   .buttons{
+       padding: 30px 0;
+   }
+
+   .button-left{
+       margin-bottom: 12px;
+       width: 100%;
+   }
+
+   .button-right{
+       width: 100%;
+    }
+
+    .images{
+        padding: 0 10px;
+    }
     
+    .grid{
+        padding: 50px 0;
+    }
+
+    .title-bold{
+        font-size: 48px;
+        line-height: 50px;
+        max-width: 300px;
+    }
+
+    .about{
+        font-size: 24px;
+        max-width: 310px;
+        margin-bottom: 30px;
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-areas:
+        "one"
+        "four"
+        "three"
+        "five"
+        "six";
+        row-gap: 20px;
+    }
+
+    .wrapper > img:nth-child(2){
+        grid-area: two;
+        display: none;
+    }
+
+    .wrapper > img:nth-child(7){
+        grid-area: seven;
+        display: none;
+    }
+}
+
+@media (max-width: 360px){
+    .container{
+        max-width: 270px;
+        margin: 0 auto;
+    }
+
+    .startup-main{
+        padding: 46px 0;
+    }
+
+    .startup{
+
+    }
+}
+
+@media (max-width: 320px){
+    .container{
+        max-width: 290px;
+    }
+
+    .busy{
+        padding: 63px 30px 43px 0;
+        text-align: left;
+    }
+
+    .title-inner{
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 18px;
+    }
+
+    .text-inner{
+        max-width: 290px;
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .button{
+        margin-right: 140px;
+        margin-bottom: 40px;
+    }
+
+    .categories{
+        padding: 50px 15px;
+    }
+
+    .title-first{
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 18px;
+    }
+
+    .words-second{
+        font-size: 22px;
+        line-height: 34px;
+        margin-bottom: 30px;
+    }
+
+    .buttons{
+        margin-bottom: 40px;
+    }
+
+    .images-list{
+        height: 300px;
+    }
+
+    .grid{
+        padding: 0 15px 50px;
+    }
+
 }
