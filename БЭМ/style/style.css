@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-header, .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-header{
+    margin: 17px auto;
+}
+
+.logo__img{
+    min-width: 41px;
+}
+
+.nav__li{
+    display: inline-block;
+}
+
+.nav__link{
+    font-size: 16px;
+    line-height: 19px;
+    color: #B8BECD;
+    margin-right: 35px;
+    text-decoration: none;
+}
+
+.nav__link-active{
+    color: #202336;
+}
+
+.button-container__button{
+    border: 1px solid #FB8F1D;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 44px;
+    width: 132px;
+    background: #FB8F1D;
+    color: white;
+}
+
+.button-container__button-transparent{
+    background: white;
+    color: #FB8F1D;
+}
+
+.container-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 70px;
+    width: 247px;
+    margin-bottom: 16px;
+}
+
+.line{
+    width: 92px;
+    height: 5px;
+    background: #0F0B0B;
+    border-radius: 5px;
+    margin-bottom: 52px;
+}
+
+.input{
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 412px;
+    height: 59px;
+    margin-bottom: 25px;
+
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+    padding: 19px 330px 20px 28px;
+    
+}
+
+.button{
+    background: #1ABE84;
+    border-radius: 20px;
+    border: none;
+    width: 158px;
+    height: 59px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.picture-left{
+    margin-right: 55px;
+}
+
+.imagine{
+    position: relative;
+}
+
+.item-1, .item-3{
+    position: absolute;
+    width: 152px;
+    height: 63px;
+    background: rgb(201, 93, 93);
+    border-radius: 0px 10px;
+}
+
+.item-2, .item-4{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    position: absolute;
+}
+
+.item-1{
+    bottom: 3px;
+}
+
+.item-2{
+    bottom: 25px;
+    left: 16px;
+}
+
+.item-3{
+    bottom: 3px;
+    left: 320px;
+}
+
+.item-4{
+    bottom: 25px;
+    left: 335px;
+}
