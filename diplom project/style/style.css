@@ -445,6 +445,42 @@ body{
     transition: 1s;
 }
 
+.hiring-item__container{
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.hiring-items > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hiring-items{
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 25px;
+    margin-bottom: 20px
+}
+
+.hiring-items > p{
+    margin-top: 20px;
+    display: none;
+}
+
+.active{
+    transform: rotate(90deg);
+    transition: 1s;
+}
+
+.toggleBg{
+    background-color: #3141C5;
+}
+
+.toggleColor{
+    color: white;
+}
+
 .grid{
     padding: 45px 0 90px 0;
 }
@@ -1036,6 +1072,7 @@ body{
     .images > div:nth-child(4){
         grid-area: four;
     }
+
 
     .grid{
         padding: 43px 0 125px;
