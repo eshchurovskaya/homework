@@ -18,6 +18,17 @@ body{
     align-items: center;
 }
 
+.line{
+    width: 18px;
+    height: 2px;
+    background-color: #2C3241;
+    transition: 500ms linear;
+}
+
+.line:not(:last-of-type){
+    margin-bottom: 3px;
+}
+
 .logo{
     display: flex;
     align-items: center;
@@ -25,16 +36,6 @@ body{
 
 .logo>div:first-child{
     margin-right: 15px;
-}
-
-.line{
-    width: 18px;
-    height: 2px;
-    color: #000000;
-}
-
-.line:not(:last-of-type){
-    margin-bottom: 3px;
 }
 
 .logo-bold{
@@ -50,6 +51,19 @@ body{
     line-height: 25px;
     color: rgba(43, 41, 45, 0.6);
 
+}
+
+.checkbox{
+    margin: 0 auto;
+}
+
+.checkbox, .line-wrapper{
+    display: none;
+}
+
+.checkbox-menu{
+    display: flex;
+    align-items: center;
 }
 
 .header-nav{
@@ -80,6 +94,23 @@ body{
     margin-left: 75px;
 }
 
+.button-started{
+    border: none;
+    font-size: 18px;
+    line-height: 13px;
+    color: #FFFFFF;
+    background-color: #3040C4;
+    padding: 18px 28px ;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.button-started:hover{
+    background: white;
+    color: #3040C4;
+    transition: 1s;
+}
+
 .button{
     border: none;
     font-size: 18px;
@@ -91,11 +122,6 @@ body{
     cursor: pointer;
 }
 
-.button:hover{
-    background: white;
-    color: #3040C4;
-    transition: 1s;
-}
 
 .header-wrapper{
     display: flex;
@@ -114,7 +140,6 @@ body{
     right: -25px;
     z-index: 0;
 }
-
 
 .title{
     font-size: 80px;
@@ -823,6 +848,84 @@ body{
         padding: 31px 0 0;
     }
 
+
+    .logo-regular{
+        display: none;
+    }
+
+    .checkbox-menu{
+        position: relative;
+    }
+
+    .checkbox{
+        position: absolute;
+        z-index: 3;
+        width: 18px;
+        height: 18px;
+        opacity: 0;
+    }
+
+    .line-wrapper{
+        z-index: 2;
+    }
+
+    .checkbox:checked ~ .line-wrapper>.line:first-of-type{
+        transform: rotate(45deg) translate(3px, 3px)
+
+    }
+
+    .checkbox:checked ~ .line-wrapper>.line:last-of-type{
+        transform: rotate(-45deg) translate(4px, -4px)
+
+    }
+
+    .checkbox:checked ~ .line-wrapper>.line:nth-child(2){
+        opacity: 0;
+
+    }
+
+    .checkbox:checked ~ .header-nav{
+        display: block;
+        position: fixed;
+        background: #4e6166;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .checkbox, .line-wrapper{
+        display: block;
+    }
+
+    .header-nav{
+        display: none;
+        text-align: center;
+    }
+
+    .header-nav>div{
+        margin-left: 0;
+    }
+
+    ul{
+        margin-top: 10%;
+    }
+
+    .header-li{
+       display: block;
+       margin-bottom: 20px;
+    }
+
+    .header-li:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .button-started{
+        width: 85px;
+        padding: 13px;
+        font-size: 9px;
+    }
+
     .header-wrapper{
         display: block;
         position: static;
@@ -1007,7 +1110,8 @@ body{
         width: 419px;
     }
 
-    .button{
+    .button-busy{
+        width: 160px;
         margin-bottom: 37px;
     }
 
@@ -1138,10 +1242,11 @@ body{
     
     .free-input{
         width: 290px;
+        font-weight: bold;
         margin-right: 18px;
     }
 
-    .button{
+    .button-bg{
         width: 290px;
     }
 
@@ -1243,6 +1348,7 @@ body{
         gap: 10px;
     }
 
+
     .grid{
         padding: 30px 0;
     }
@@ -1314,10 +1420,11 @@ body{
         margin: 0;
     }
 
-    .button{
+    .button-bg{
         margin-top: 25px;
     }
 }
+
 @media (max-width: 550px){
     .container{
         max-width: 430px;
@@ -1325,6 +1432,10 @@ body{
 
     .button-header{
         margin-right: 20px;
+    }
+
+    .title{
+        width: 350px;
     }
 
     .header-wrapper > div:first-of-type .button{
@@ -1473,6 +1584,10 @@ body{
 @media (max-width: 480px){
     .container{
         max-width: 310px;
+    }
+
+    .checkbox:checked ~ .header-nav{
+        background: rgba;
     }
 
     .header-wrapper{
@@ -1681,6 +1796,12 @@ body{
         padding: 35px 0;
     }
 
+    
+    .header-main{
+        padding: 15px 0;
+        background-color: white;
+    }
+
     .header-text{
         width: 290px;
     }
@@ -1722,7 +1843,10 @@ body{
         margin-bottom: 22px;
     }
 
-
+    .button-busy{
+        display: flex;
+        width: 160px;
+    }
 
     .footer-hr{
         display: none;
@@ -1771,7 +1895,7 @@ body{
         line-height: 32px;
     }
 
-    .free-input, .button{
+    .free-input, .button-bg{
         width: 260px;
     }
 }
@@ -1838,6 +1962,10 @@ body{
         text-align: left;
     }
 
+    .busy-flex{
+        margin-left: 15px;
+    }
+
     .title-inner{
         font-size: 40px;
         line-height: 40px;
@@ -1850,11 +1978,6 @@ body{
         line-height: 34px;
         margin-bottom: 30px;
         text-align: left;
-    }
-
-    .button{
-        margin-right: 140px;
-        margin-bottom: 40px;
     }
 
     .picture-list{
@@ -1883,7 +2006,6 @@ body{
 
     .images > div{
         width: 290px;
-        box-sizing: border-box;
         text-align: center;
     }
 
@@ -1907,11 +2029,11 @@ body{
         margin-bottom: 40px;
     }
 
-    .free-input, .button{
+    .free-input, .button-bg{
         width: 100%;
     }
 
-    .button{
+    .button-bg{
         margin-bottom: 10px;
     }
 
