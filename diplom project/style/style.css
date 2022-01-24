@@ -232,7 +232,7 @@ body{
 .feature-picture{
     position: absolute;
     top: 258px;
-    left: -130px;
+    left: -150px;
 }
 
 .feature-words{
@@ -1216,6 +1216,7 @@ hr{
 
     .feature-picture{
         display: block;
+        left: -170px;
     }
 
     .feature-words{
@@ -1231,7 +1232,7 @@ hr{
     }
 
     .feature-title{
-        width: 462px;
+        width: 400px;
         margin-bottom: 12px;
     }
 
@@ -1549,6 +1550,10 @@ hr{
         max-width: 100%;
     }
 
+    .feature-picture{
+        left: -150px;
+    }
+
     .inbox-list{
         margin: 0 auto;
     }
@@ -1698,6 +1703,38 @@ hr{
         grid-area: six;
     }
 
+    
+    .feature{
+        padding: 40px 0;
+    }
+
+    .features{
+        max-width: 370px;
+    }
+
+    .feature-picture{
+        display: none;
+    }
+    
+    .feature-title{
+        max-width: 390px;
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    .feature-sc{
+        max-width: 360px;
+    }
+
+    .customers-text{
+        text-align: start;
+    }
+    
+    .feature-img{
+        width: 440px;
+        height: 330px;
+    }
+
     .inbox{
         display: flex;
         flex-direction: column-reverse;
@@ -1826,7 +1863,8 @@ hr{
     }
 
     .checkbox:checked ~ .header-nav{
-        background: rgba;
+        background: #F3C6BD;
+        z-index: 2;
     }
 
     .header-wrapper{
@@ -1864,6 +1902,31 @@ hr{
 
    .startup-block{
        margin-bottom: 30px;
+    }
+
+    .feature-title{
+        max-width: 394px;
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .future-text{
+        width: 390px;
+        font-size: 23px;
+        line-height: 34px;
+    }
+
+    .feature-sc{
+        max-width: 360px;
+    }
+
+    .customers-text{
+        text-align: start;
+    }
+    
+    .feature-img{
+        width: 440px;
+        height: 330px;
     }
 
     .inbox-peach{
@@ -2117,6 +2180,44 @@ hr{
         display: none;
     }
 
+    .feature-container{
+        text-align: start;
+    }
+
+    .feature-words{
+        max-width: 310px;
+    }
+
+    .feature-title{
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .future-text{
+        font-size: 24px;
+        line-height: 34px;
+        width: 330px;
+        margin-bottom: 33px;
+    }
+
+    .feature-customers{
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    hr{
+        width: 290px;
+        margin-left: 0;
+
+    }
+
+    .feature-img{
+        margin-top: -30px;
+        width: 325px;
+        height: 250px;
+    }
+
     .inbox-peach{
         padding: 70px 20px;
     }
@@ -2216,6 +2317,23 @@ hr{
 
     .header-wrapper > div:first-of-type button{
         width: 290px;
+    }
+
+    .feature{
+        padding: 55px 0;
+    }
+
+    .feature-words{
+        width: 290px;
+    }
+
+    .feature-title{
+        max-width: 290px;
+    }
+
+    .feature-img{
+        width: 290px;
+        height: 240px;
     }
 
     .inbox-peach{
