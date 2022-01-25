@@ -10,5 +10,18 @@ $('.hiring-items > div').on('click', function(){
 $('.feature-sc > div').on('click', function(){
     $(this).next('p').slideToggle(300);
     $(this).children('.feature-customers').toggleClass('toggleBlue');
-    $(this).next('hr').toggleClass('toggleBack');
+    $(this).parent('.feature-sc').toggleClass('toggleBack');
 })
+
+$('#menuToggle #toggleCheckbox').change(function() {
+    if(this.checked) {
+        $('body').css({'overflow': "hidden" })
+    }
+    else {
+        $('body').css({'overflow': "visible" })
+    }
+});
+
+$('.carousel').slick({
+    dots: true,
+});

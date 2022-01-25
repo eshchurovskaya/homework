@@ -222,17 +222,13 @@ body{
 
 .feature{
     padding: 110px 0 78px;
-}
-
-.feature-container{
     position: relative;
 }
 
-
 .feature-picture{
     position: absolute;
-    top: 258px;
-    left: -150px;
+    top: 355px;
+    left: 0;
 }
 
 .feature-words{
@@ -266,6 +262,14 @@ body{
     margin-bottom: 42px;
 }
 
+.feature-sc{
+    border-bottom: 1px solid gray;
+}
+
+.feature-sc:not(:last-of-type){
+    margin-bottom: 20px;
+}
+
 .customers{
     display: flex;
     align-items: center;
@@ -289,19 +293,11 @@ body{
     display: none;
 }
 
-hr{
-    max-width: 457px;
-    height: 1px;
-    background: #2B292D;
-    opacity: 0.15;
-    margin-bottom: 21px;
-}
-
 .feature-img{
     max-width: 680px;
     position: absolute;
-    bottom: -25px;
-    right: -149px;
+    bottom: 86px;
+    right: 0;
 }
 
 .toggleBlue{
@@ -309,8 +305,7 @@ hr{
 }
 
 .toggleBack{
-    background-color: #3142C6;
-    height: 3px;
+    border-bottom: 3px solid #3142C6;
 }
 
 .inbox-peach{
@@ -561,6 +556,58 @@ hr{
     background-color: #3040C4;
     color: white;
     transition: 1s;
+}
+
+.business{
+    padding: 50px 0;
+    position: relative;
+}
+
+.business-main{
+    text-align: center;
+}
+
+.business-title{
+    font-size: 24px;
+    line-height: 30px;
+    color: #3142C6;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+
+.business-text{
+    font-size: 24px;
+    line-height: 34px;
+    color: #2B292D;
+    max-width: 750px;
+    margin: 34px 200px;
+}
+
+.business-name{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.business-person{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 38px;
+    color:rgba(43, 41, 45, 0.6);
+}
+
+.business-img{
+    position: absolute;
+    top: 184px;
+    right: 0;
+    z-index: 2;
+}
+
+.slick-dots li button {
+    font-size: 8px;
+    cursor: pointer;
+    color: rgba(49, 66, 197, 1);
+    opacity: 0.2;
 }
 
 .hiring{
@@ -974,11 +1021,8 @@ hr{
     }
 
     .feature-img{
-        width: 538px;
-        height: 446px;
-        position: absolute;
+        width: 595px;
         top: 50px;
-        right: -50px;
     }
 
     .inbox-peach{
@@ -1216,7 +1260,7 @@ hr{
 
     .feature-picture{
         display: block;
-        left: -170px;
+        top: 240px;
     }
 
     .feature-words{
@@ -1405,6 +1449,40 @@ hr{
         grid-area: four;
     }
 
+    .business{
+        padding: 87px 0 0;
+    }
+
+    .business-container{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .business-main{
+        width: 583px;
+        text-align: center;
+    }
+
+    .business-title{
+        max-width: 573px;
+        margin: 0 auto;
+    }
+
+    .business-text{
+        width: 584px;
+        margin: 14px auto;
+    }
+
+    .business-person{
+        width: 176px;
+        margin: 0 auto;
+    }
+
+    .business-img{
+        position: static;
+        margin-top: 51px;
+    }
 
     .grid{
         padding: 43px 0 125px;
@@ -1551,7 +1629,7 @@ hr{
     }
 
     .feature-picture{
-        left: -150px;
+        top: 200px;
     }
 
     .inbox-list{
@@ -1708,9 +1786,14 @@ hr{
         padding: 40px 0;
     }
 
+    .feature-words{
+        max-width: 370px;
+    }
+
     .features{
         max-width: 370px;
     }
+
 
     .feature-picture{
         display: none;
@@ -1925,7 +2008,7 @@ hr{
     }
     
     .feature-img{
-        width: 440px;
+        width: 385px;
         height: 330px;
     }
 
