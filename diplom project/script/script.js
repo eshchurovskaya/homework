@@ -25,3 +25,20 @@ $('#menuToggle #toggleCheckbox').change(function() {
 $('.carousel').slick({
     dots: true,
 });
+
+$(window).scroll(function(){
+    if($(this).scrollTop()>500){
+        $('#up').fadeIn();
+    }else{
+        $('#up').fadeOut();
+    }
+})
+
+$('#up').on('click', function(){
+    $('html, body').animate({scrolTop: 0}, 400)
+})
+
+$('#home').on('click', function(e){
+    e.preventDefault();
+    $('html, body').animate({scrollTop: $('#about').offset().top}, 500);
+})

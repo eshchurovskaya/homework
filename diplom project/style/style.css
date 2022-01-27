@@ -944,6 +944,17 @@ body{
     display: none;
 }
 
+#up{
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: pink;
+    padding: 20px;
+    border-radius: 50%;
+    color: white;
+}
+
 @keyframes picture{
     0%{
         left: 0;
