@@ -605,9 +605,13 @@ body{
 
 .slick-dots li button {
     font-size: 8px;
+    content: '•';
     cursor: pointer;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
     color: rgba(49, 66, 197, 1);
-    opacity: 0.2;
 }
 
 .hiring{
@@ -1658,6 +1662,13 @@ body{
         gap: 10px;
     }
 
+    .business-text{
+        max-width: 500px;
+    }
+
+    .business-person{
+        margin-bottom: 20px;
+    }
 
     .grid{
         padding: 30px 0;
@@ -1914,6 +1925,10 @@ body{
         height: 260px;
     }
 
+    .business-text{
+        max-width: 430px;
+    }
+
     .hiring-text{
         width: 260px;
     }
@@ -2128,6 +2143,10 @@ body{
         width: 290px;
     }
 
+    .business-text{
+        max-width: 310px;
+    }
+
     .hiring-title{
         font-size: 40px;
         line-height: 40px;
@@ -2184,8 +2203,6 @@ body{
         top: -1px;
         right: 0;
         border-radius: 0px 8px 8px 0px;
-
-
     }
     
     .grid{
@@ -2329,6 +2346,10 @@ body{
     .button-busy{
         display: flex;
         width: 160px;
+    }
+
+    .business-text{
+        max-width: 270px;
     }
 
     .footer-hr{
@@ -2509,6 +2530,10 @@ body{
         text-align: center;
     }
 
+    .hiring{
+        padding: 60px 0;
+    }
+
     .hiring-text{
         width: 290px;
         margin-bottom: 30px;
@@ -2517,6 +2542,33 @@ body{
     .hiring-button{
         width: 290px;
         margin-bottom: 39px;
+    }
+
+    .business{
+        padding: 53px 15px;
+    }
+
+    .business-main{
+        text-align: left;
+    }
+
+    .business-text{
+        margin: 30px 0;
+    }
+
+    .business-person{
+        margin: 0;
+        height: 15px;
+    }
+
+    .slick-dots li button:before {
+        font-size: 12px;
+        margin-top: 43px;
+    }
+
+    .business-img{
+        width: 290px;
+        margin-top: 75px;
     }
 
     .grid{
