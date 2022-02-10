@@ -173,8 +173,8 @@ ul{
     color: #A3ABB6;
     transform: matrix(0, -1, 1, 0, 0, 0);
     position: absolute;
-    bottom: 164px;
-    left: -169px;
+    bottom: 144px;
+    left: -131px;
     z-index: 1;
 }
 
@@ -185,8 +185,8 @@ ul{
     color: #A3A9B7;
     transform: matrix(-0.01, -1, 1, -0.01, 0, 0);
     position: absolute;
-    bottom: 144px;
-    left: -41px;
+    bottom: 150px;
+    left: -29px;
     z-index: 1;
 }
 
@@ -239,7 +239,7 @@ ul{
 }
 
 .building-img{
-    max-width: 1197px;
+    max-width: 100%;
 }
 
 .about{
@@ -795,4 +795,437 @@ ul{
     color: #737887;
     opacity: 0.7;
     font-weight: bold;
+}
+
+@media (max-width: 1440px){
+    .container{
+        max-width: 1250px;
+    }
+
+    .building-picture{
+        left: -10px;
+        top: 389px;
+        max-width: 245px;
+    }
+    
+    .building-img{
+        max-width: 1042px;
+    }
+
+    .building-sky{
+        left: 117px;
+    }
+
+    .building-text{
+        left: 242px;
+    }
+
+    .building-project{
+        left: 242px;
+    }
+
+    .project{
+        padding: 60px 0;
+    }
+
+    .carousel-page > img{
+        max-width: 290px;
+    }
+
+    .project-houses{
+        margin-left: 150px;
+    }
+
+    .house{
+        padding: 40px 22px
+    }
+
+    .cadillac-text{
+        margin-bottom: 53px;
+    }
+
+    .clients-container{
+        padding: 40px 0 70px;
+    }
+    
+    .clients-container > div{
+        margin-left: 200px;
+    }
+
+    .carousel-clients{
+        max-width: 490px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1300px){
+    .container{
+        max-width: 1040px;
+    }
+
+    .building-picture{
+        top: 298px;
+    }
+
+    .building-img{
+        max-width: 866px;
+    }
+
+    .building-sky{
+        left: 94px;
+    }
+
+    .building-text{
+        left: 220px;
+    }
+
+    .building-project{
+        left: 220px;
+    }
+
+    .building-title{
+        font-size: 65px;
+        top: 280px;
+    }
+
+    .building-architecture{
+        font-size: 34px;
+        top: 326px;
+    }
+
+    .container-about{
+        max-width: 843px;
+    }
+
+    .about-img{
+        left: 162px;
+        max-width: 244px;
+    }
+
+    .about-picture > img {
+        max-width: 340px;
+    }
+
+    .about-title{
+        margin-bottom: 27px;
+    }
+
+    .about-text{
+        max-width: 420px;
+        margin-bottom: 32px;
+    }
+
+    .square{
+        height: 110px;
+        width: 100px;
+        top: 251px;
+    }
+
+    .about-figure{
+        font-size: 55px;
+        left: 19px;
+        top: 243px;
+    }
+
+    .about-words{
+        margin-bottom: 80px;
+    }
+
+    .carousel-page > img {
+        max-width: 320px;
+    }
+
+    .house{
+        padding: 57px 36px;
+    }
+
+    .carousel-page:not(:last-of-type){
+        margin-left: 35px;
+    }
+
+    .project-houses{
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 1090px){
+    .container{
+        max-width: 750px;
+    }
+
+    .clients{
+        display: none;
+    }
+
+    .building-img{
+        max-width: 616px;
+    }
+
+    .building-picture{
+        top: 197px;
+        max-width: 200px;
+    }
+
+    .building{
+        padding-bottom: 70px;
+    }
+
+    .building-sky{
+        left: 60px;
+    }
+
+    .building-text{
+        left: 150px;
+    }
+
+    .building-project{
+        left: 150px;
+    }
+
+    .building-title{
+        line-height: 40px;
+        font-size: 42px;
+        left: -82px;
+        top: 220px;
+    }
+
+    .building-architecture{
+        left: -33px;
+        font-size: 24px;
+        top: 230px;
+    }
+
+    .container-about{
+        max-width: 574px;
+    }
+
+    .about-img{
+        left: 59px;
+        max-width: 200px;
+        bottom: 37px;
+    }
+
+    .about-picture > img{
+        max-width: 215px;
+        margin-right: 50px;
+    }
+
+    .about-us{
+        margin-bottom: 3px;
+        font-size: 10px;
+    }
+
+    .about-title{
+        margin-bottom: 8px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .about-text{
+        max-width: 300px;
+        font-size: 13px;
+        margin-bottom: 11px;
+        line-height: 15px;
+    }
+
+    .square{
+        top: 210px;
+        height: 64px;
+        width: 54px;
+    }
+
+    .about-figure{
+        font-size: 33px;
+        top: 186px;
+        left: 12px;
+    }
+
+    .about-words{
+        margin-bottom: 32px;
+        margin-left: 87px;
+    }
+
+    .about-working{
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 9px;
+    }
+
+    .about-line{
+        width: 41px;
+    }
+
+    .about-button{
+        font-size: 11px;
+        padding: 9px 18px;
+    }
+
+    .project{
+        padding: 25px 0 60px;
+    }
+
+
+    .carousel-page > img {
+        max-width: 350px;
+    }
+
+    .house{
+        padding: 70px 46px;
+    }
+
+    .carousel-page:not(:last-of-type){
+        margin-left: 40px;
+    }
+
+    .project-houses{
+        margin-left: 80px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 29px;
+        margin-left: 0;
+    }
+
+    .architecture{
+        padding: 40px 0;
+    }
+
+    .container-architecture{
+        max-width: 770px;
+    }
+
+    .architecture-title{
+        max-width: 240px;
+        font-size: 28px;
+        margin-bottom: 28px;
+    }
+
+    .architecture-text{
+        max-width: 400px;
+    }
+
+    .arc-line{
+        width: 359px;
+        top: 317px;
+    }
+
+    .line-arc{
+        left: 125px;
+        top: 318px;
+    }
+
+    .architecture-design > img {
+        margin-right: 14px;
+    }
+
+    .architecture-picture > img{
+        max-width: 300px;
+    }
+
+    .architecture-img{
+        right: 140px;
+        top: 250px;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 800px){
+    .container{
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 550px){
+    .container{
+        max-width: 430px;
+    }
+}
+
+@media (max-width: 480px){
+    .container{
+        max-width: 310px;
+    }
+}
+
+@media (max-width: 360px){
+    .container{
+        max-width: 270px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container{
+        max-width: 210px;
+    }
+}
+
+
+
+.select {
+    display: block;
+    max-width: 215px;
+    width: 100%;
+    position: relative;
+}
+
+.new-select {
+    position: relative;
+    border: 1px solid #ced4da;
+    padding: 10px 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.new-select__list {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    border: 1px solid #ced4da;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    background: #fff;
+    user-select: none;
+}
+
+.new-select__list.on {
+    display: block;
+}
+
+.new-select__item span {
+    display: block;
+    padding: 10px 15px;
+}
+
+.new-select__item span:hover {
+    color: #233025;
+}
+
+.new-select:after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    background: url('../img/Polygon\ 1.svg') no-repeat right center / cover;
+    opacity: 0.6;
+
+    -webkit-transition: all .27s ease-in-out;
+        -o-transition: all .27s ease-in-out;
+            transition: all .27s ease-in-out;
+
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+.new-select.on:after {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
