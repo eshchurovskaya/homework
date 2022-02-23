@@ -617,6 +617,7 @@ ul{
 }
 
 .clients-title{
+    font-weight: bold;
     font-size: 28px;
     line-height: 33px;
     letter-spacing: 0.07em;
@@ -681,6 +682,10 @@ ul{
 .carousel-clients > .slick-dots {
     width: 100%;
     text-align: start;
+}
+
+.carousel-clients > div img{
+    margin-right: 20px;
 }
 
 .blog{
@@ -852,8 +857,13 @@ ul{
         margin-left: 200px;
     }
 
+    .clients-bg{
+        top: 190px;
+        left: 210px;
+    }
+
     .carousel-clients{
-        max-width: 490px;
+        max-width: 500px;
         margin-left: 10px;
     }
 }
@@ -948,15 +958,23 @@ ul{
         margin-bottom: 20px;
     }
 
+    .clients-container > div{
+        margin-left: 129px;
+    }
+
+    .clients-title{
+        margin-bottom: 37px;
+    }
+
+    .clients-bg{
+        left: 141px;
+    }
+
 }
 
 @media (max-width: 1090px){
     .container{
         max-width: 750px;
-    }
-
-    .clients{
-        display: none;
     }
 
     .building-img{
@@ -998,17 +1016,17 @@ ul{
     }
 
     .container-about{
-        max-width: 574px;
+        max-width: 590px;
     }
 
     .about-img{
-        left: 59px;
+        left: 80px;
         max-width: 200px;
-        bottom: 37px;
+        bottom: 15px;
     }
 
     .about-picture > img{
-        max-width: 215px;
+        max-width: 240px;
         margin-right: 50px;
     }
 
@@ -1019,7 +1037,7 @@ ul{
 
     .about-title{
         margin-bottom: 8px;
-        font-size: 18px;
+        font-size: 21px;
         line-height: 22px;
     }
 
@@ -1128,11 +1146,270 @@ ul{
         top: 250px;
         max-width: 200px;
     }
+
+    .clients{
+        background-image: url('../img/bg1.png');
+    }
+
+    .clients-container{
+        background-image: none;
+    }
+
+    .clients-container > div {
+        margin: 0 auto;
+    }
+
+    .clients-bg{
+        left: 15px;
+    }
+
+    .carousel-clients{
+        max-width: 320px;
+    }
+
+    .carousel-clients > div img{
+        max-width: 100%;
+    }
+    
 }
 
 @media (max-width: 800px){
     .container{
         max-width: 500px;
+    }
+
+    .header-text{
+        display: none;
+    }
+
+    .header-first{
+        display: flex;
+    }
+
+    .building-square{
+        width: 249px;
+        height: 86px;
+    }
+
+    .burger-text{
+        display: none;
+    }
+
+    .building-title{
+        transform: rotate(0deg);
+        font-size: 25px;
+        left: 67px;
+    }
+
+    .building-architecture{
+        left: 44px;
+        transform: rotate(0deg);
+        margin-top: 11px;
+    }
+    
+    .building-sky{
+        display: none;
+    }
+
+    .building-line{
+        display: none;
+    }
+
+    .building-picture{
+        left: 25px;
+        top: 86px;
+    }
+
+    .building-text{
+        left: 118px;
+        top: 10px;
+        font-size: 13px;
+    }
+
+    .building-project{
+        top: 39px;
+        left: 118px;
+    }
+
+    .building-img{
+        max-width: 401px;
+    }
+
+    .about{
+        padding: 60px 0 20px;
+    }
+
+    .about-img{
+        left: 229px;
+    }
+
+    .about-main{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-us{
+        font-size: 16px;
+        margin-bottom: 22px;
+    }
+
+    .about-title{
+        margin: 0 auto;
+        font-size: 25px;
+    }
+
+    .about-text{
+        margin: 30px 0;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .square{
+        top: 308px;
+    }
+
+    .about-figure{
+        top: 289px;
+    }
+
+    .about-button{
+        margin-bottom: 50px;
+        padding: 16px 33px;
+        font-size: 19px;
+        margin-top: 30px;
+    }
+
+    .about-picture > img {
+        margin: 0 auto;
+    }
+
+    .about-words{
+        text-align: left;
+    }
+
+    .project{
+        padding: 60px 0
+    }
+
+    .project-houses{
+        margin-bottom: 40px;
+        font-size: 32px;
+    }
+
+    .carousel{
+        max-width: 365px;
+        margin: 0 auto;
+    }
+
+    .architecture{
+        padding: 60px 0;
+    }
+
+    .architecture-box{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+    }
+
+    .architecture-title{
+        margin: auto;
+    }
+
+    .architecture-text{
+        margin-top: 40px;
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    .arc-line{
+        display: none;
+    }
+
+    .line-arc{
+       display: none;
+    }
+
+    .architecture-picture{
+        margin-bottom: 75px;
+    }
+
+    .architecture-img{
+        left: 185px;
+    }
+
+    .clients-title{
+        text-align: center;
+        font-size: 26px;
+        max-width: 411px;
+    }
+
+    .clients-bg{
+        left: 118px;
+    }
+
+    .clients-img{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .clients-main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel-clients{
+        max-width: 350px;
+    }
+
+    .slick-slide{
+        margin-right: 20px;
+    }
+
+    .blog-container{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .blog-new{
+        margin-bottom: 28px;
+        text-align: center;
+    }
+
+    .blog-variations > div img{
+        max-width: 240px;
+    }
+
+    .blog-variations :nth-child(3){
+        display: none;
+    }
+
+    .blog-text{
+        max-width: 240px;
+    }
+
+    .footer-menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-arc{
+        margin-bottom: 17px;
+    }
+
+    .footer-menu > div:not(:last-of-type){
+        margin-bottom: 40px;
+    }
+
+    .footer-options{
+        display: flex;
+        justify-content: start;
+    }
+
+    .footer-language{
+        margin-right: 10px;
     }
 }
 
@@ -1140,17 +1417,253 @@ ul{
     .container{
         max-width: 430px;
     }
+
+    .building-square{
+        width: 130px;
+    }
+
+    .building{
+        padding: 0 0 10px;
+    }
+
+    .building-title{
+        display: none;
+    }
+
+    .building-architecture{
+        display: none;
+    }
+
+    .building-picture{
+        display: none;
+    }
+
+    .building-text{
+        top: 9px;
+        left: 19px;
+    }
+
+    .building-project{
+        left: 19px;
+    }
+
+    .building-img{
+        max-width: 100%;
+    }
+
+    .clients-title{
+        max-width: 200px;
+        margin-left: 100px;
+    }
+
+    .clients-img{
+        margin: 0 auto;
+    }
+
+    .clients-bg{
+        top: 219px;
+    }
+
+    .clients-name{
+        margin-top: 84px;
+    }
+
+    .clients-main :nth-child(2){
+        text-align: center;
+    }
+
+    .clients-text{
+        max-width: 230px;
+    }
+
+    .carousel-clients > .slick-dots {
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px){
     .container{
         max-width: 310px;
     }
+
+    .about-us{
+        margin-bottom: 13px;
+    }
+
+    .about-text{
+        font-size: 12px;
+        margin: 20px 0;
+    }
+
+    .about-words{
+        margin-left: 150px;
+    }
+
+    .about-working{
+        max-width: 50px;
+    }
+
+    .square{
+        top: 250px;
+        left: 63px;
+    }
+
+    .about-title{
+        font-size: 21px;
+    }
+
+    .about-figure{
+        top: 230px;
+        left: 73px;
+    }
+
+    .about-button{
+        font-size: 12px;
+        padding: 14px 14px;
+    }
+
+    .about-picture > img{
+        max-width: 220px;
+    }
+
+    .about-img{
+        left: 184px;
+    }
+
+    .project-houses{
+        font-size: 30px;
+        max-width: 200px;
+        margin-left: 35px;
+    }
+
+    .carousel > div img{
+        max-width: 280px;
+    }
+
+    .house{
+        padding: 19px 40px;
+    }
+
+    .cadillac{
+        font-size: 20px;
+    }
+
+    .cadillac-text{
+        max-width: 200px;
+    }
+
+    .city{
+        margin-bottom: 25px;
+    }
+
+    .architecture{
+        padding: 20px 0;
+    }
+
+    .architecture-picture > img {
+        max-width: 250px;
+    }
+
+    .architecture-img{
+        display: none;
+    }
+
+    .architecture-title{
+        font-size: 23px;
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+
+    .architecture-text{
+        max-width: 335px;
+        margin: 0 auto;
+    }
+
+    .architecture-main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 43px;
+        align-items: center;
+    }
+
+    .about-button{
+        margin-top: 11px;
+    }
+
+    .clients-bg{
+        left: 63px;
+    }
+
+
 }
 
 @media (max-width: 360px){
     .container{
         max-width: 270px;
+    }
+
+    .about-text{
+        max-width: 250px;
+        font-size: 15px;
+    }
+
+    .square{
+        top: 300px;
+    }
+
+    .about-figure{
+        top: 275px;
+    }
+
+    .about-img{
+        left: 115px;
+    }
+
+    .carousel > div img{
+        max-width: 265px;
+        margin-bottom: 25px;
+    }
+
+    .architecture-text{
+        max-width: 247px;
+        font-size: 18px;
+    }
+
+    .clients-title{
+        font-size: 21px;
+        line-height: 22px;
+        margin-left: 54px;
+        max-width: 154px;
+    }
+
+    .blog-variations{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .blog-text{
+        margin-bottom: 20px;
+        margin-left: 55px;
+    }
+
+    .blog-words{
+        font-size: 18px;
+    }
+
+    .clients-bg{
+        left: 80px;
+        max-width: 197px;
+        top: 245px;
+    }
+
+    .footer-text{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .footer-term{
+        font-size: 16px;
     }
 }
 
@@ -1158,74 +1671,63 @@ ul{
     .container{
         max-width: 210px;
     }
-}
 
+    .building-img{
+        font-size: 15px;
+        line-height: 19px;
+    }
 
+    .about-working{
+        font-size: 15px;
+        line-height: 19px;
+    }
 
-.select {
-    display: block;
-    max-width: 215px;
-    width: 100%;
-    position: relative;
-}
+    .about-img{
+        left: 95px;
+    }
 
-.new-select {
-    position: relative;
-    border: 1px solid #ced4da;
-    padding: 10px 15px;
-    cursor: pointer;
-    user-select: none;
-}
+    .project-houses{
+        margin: 0 auto;
+    }
 
-.new-select__list {
-    position: absolute;
-    top: 45px;
-    left: 0;
-    border: 1px solid #ced4da;
-    cursor: pointer;
-    width: 100%;
-    z-index: 2;
-    background: #fff;
-    user-select: none;
-}
+    .slick-list{
+        margin-top: 30px;
+    }
 
-.new-select__list.on {
-    display: block;
-}
+    .architecture-text{
+        max-width: 260px;
+        font-size: 19px;
+    }
 
-.new-select__item span {
-    display: block;
-    padding: 10px 15px;
-}
+    .clients-title{
+        margin: 0 auto;
+    }
 
-.new-select__item span:hover {
-    color: #233025;
-}
+    .clients-bg{
+        max-width: 170px;
+        left: 59px;
+        top: 215px;
+    }
 
-.new-select:after {
-    content: '';
-    display: block;
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: 9px;
-    top: 9px;
-    background: url('../img/Polygon\ 1.svg') no-repeat right center / cover;
-    opacity: 0.6;
+    .clients-img > img{
+        max-width: 180px;
+        margin-top: 30px;
+    }
 
-    -webkit-transition: all .27s ease-in-out;
-        -o-transition: all .27s ease-in-out;
-            transition: all .27s ease-in-out;
+    .footer-options{
+        display: flex;
+        flex-direction: column;
+    }
 
-    -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-         -o-transform: rotate(0deg);
-            transform: rotate(0deg);
-}
+    .footer-language{
+        margin-bottom: 20px;
+    }
 
-.new-select.on:after {
-    -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-         -o-transform: rotate(180deg);
-            transform: rotate(180deg);
+    .footer-select{
+        margin-bottom: 100px;
+    }
+
+    .footer-picture{
+        display: flex;
+    }
 }
