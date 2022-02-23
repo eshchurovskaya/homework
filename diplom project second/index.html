@@ -316,7 +316,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="arc-button">
+                        <div id="button" class="arc-button">
                             <button class="about-button">
                                 Order a design
                             </button>
@@ -498,6 +498,27 @@
                 </ul>
             </div>
             <p class="close">
+                x
+            </p>
+        </div>
+    </div>
+    <div class="modal-form">
+        <div class="modal-second">
+            <div class="modal-main">
+                <p>
+                    Leave your email and our manager will contact you 
+                </p>
+                <form method="POST">
+                    <div>
+                        <input placeholder="Email" type="email" id="email">
+                        <p id="error-email" class="error-message"></p>
+                    </div>
+                    <button id="button-second" type="submit">
+                        Send
+                    </button>
+                </form>
+            </div>
+            <p class="close close-second">
                 x
             </p>
         </div>
