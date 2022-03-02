@@ -1,0 +1,69 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+button{
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.photo{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.avatar{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.content{
+    display: inline-block;
+    width: 700px;
+    vertical-align: top;
+}
+
+.content-title{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.text{
+    font-size: 20px;
+    font-weight: 400px;
+    color: black;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+.socials{
+    margin-bottom: 15px;
+}
+
+.icon{
+    margin-right: 15px;
+}
+
+.icon:last-child{
+    margin-right: 0;
+}
+
+.button{
+    background-color: blue;
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
