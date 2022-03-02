@@ -1,0 +1,46 @@
+.item{
+    border: 3px solid black;
+    padding: 30px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.item-1{
+    flex: 1;
+    order: 3;
+}
+
+.item-2{
+    flex: 1;
+    order: 1;
+}
+
+.item-3{
+    flex: 1;
+    order: 2;
+}
+
+.container2{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item-4{
+    background-color: bisque;
+    flex-basis: 200px;
+}
+
+.item-5{
+    background-color: blue;
+    flex-basis: 200px;
+}
+
+.item-6{
+    background-color: pink;
+    flex-basis: 200px;
+}

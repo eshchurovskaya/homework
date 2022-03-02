@@ -1,0 +1,47 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    max-width: 1090px;
+    margin: 0 auto;
+}
+
+.header-li{
+   display: inline-block;
+   margin-right: 45px;
+}
+
+.header-li>a{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #BD6600;
+    text-decoration: none;
+
+}
+
+.header-ul{
+    text-align: center;
+}
+
+.header{
+    padding: 43px 0;
+}
+
+.bg-section{
+    background-image: url('../img/background.png');
+    padding: 112px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.bg-text{
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 98px;
+    text-align: center;
+    color: white;
+}
