@@ -1,0 +1,46 @@
+.footer{
+    background: #252B42;
+    text-align: left;
+    padding: 150px 0;
+
+    &-container{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+
+        &-adress{
+            font-size: 15px;
+            line-height: 27px;
+            letter-spacing: 0.2px;
+            color: #FFFFFF;
+            margin-left: 15px;
+
+        }
+
+        &-text{
+            color: #FFFFFF;
+            margin-bottom: 16px;
+
+
+            &:hover{
+                font-weight: bold;
+            }
+        }
+
+        &-location{
+            & > div{
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+
+            & > div >img:not(:last-child){
+                margin-right: 33px;
+            }
+        }
+    }
+}
